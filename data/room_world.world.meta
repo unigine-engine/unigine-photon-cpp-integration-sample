@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.20.0.0">
+	<guid>850b117c986c227e2da9e3f446497e6747af39e9</guid>
+	<type>world</type>
+	<hash>852fb62b</hash>
+	<runtimes>
+		<runtime id="850b117c986c227e2da9e3f446497e6747af39e9" name="room_world.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="script_name"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="viewports_settings"/>
+	</parameters>
+</asset>

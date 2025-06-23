@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.20.0.0">
+	<guid>f1333ac9ce115080a08553582261c296e9ff92aa</guid>
+	<type>property</type>
+	<hash>1d9272e1</hash>
+	<runtimes>
+		<runtime id="f1333ac9ce115080a08553582261c296e9ff92aa" name="GameChat" link="0" type="4"/>
+	</runtimes>
+</asset>
