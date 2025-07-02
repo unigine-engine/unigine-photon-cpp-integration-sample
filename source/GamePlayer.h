@@ -27,7 +27,7 @@ public:
 
 	bool isAlive() const;
 
-	UNIGINE_CALLBACK_METODS(OnDead, on_dead);
+	UNIGINE_CALLBACK_METHODS(OnDead, on_dead);
 
 private:
 	Unigine::Signal on_dead;

@@ -27,11 +27,11 @@ public:
 
 	void onReceiveBroadcastMessage(const ExitGames::Common::JString &channelName, nByte *inBuff, int inBuffBodyLength) override;
 
-	UNIGINE_CALLBACK_METODS(GetMessages, on_get_message);
-	UNIGINE_CALLBACK_METODS(PrivateMessage, on_private_message);
-	UNIGINE_CALLBACK_METODS(StatusUpdate, on_status_update);
-	UNIGINE_CALLBACK_METODS(RecieveBroadcastMessage, on_recieve_broadcast_message);
-	UNIGINE_CALLBACK_METODS(OnConnected, on_connected);
+	UNIGINE_CALLBACK_METHODS(GetMessages, on_get_message);
+	UNIGINE_CALLBACK_METHODS(PrivateMessage, on_private_message);
+	UNIGINE_CALLBACK_METHODS(StatusUpdate, on_status_update);
+	UNIGINE_CALLBACK_METHODS(RecieveBroadcastMessage, on_recieve_broadcast_message);
+	UNIGINE_CALLBACK_METHODS(OnConnected, on_connected);
 
 private:
 	Unigine::Signal on_get_message;

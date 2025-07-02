@@ -29,16 +29,16 @@ public:
 	void leaveLobbyReturn() override;
 	void onRoomListUpdate() override;
 
-	UNIGINE_CALLBACK_METODS(RoomJoined, on_join_room);
-	UNIGINE_CALLBACK_METODS(RoomCreated, on_room_created);
-	UNIGINE_CALLBACK_METODS(RoomListUpdated, on_room_list_updated);
-	UNIGINE_CALLBACK_METODS(JoinRoomEvent, on_join_room_event);
-	UNIGINE_CALLBACK_METODS(LeaveRoomEvent, on_leave_room_event);
-	UNIGINE_CALLBACK_METODS(OnConnected, on_connected);
+	UNIGINE_CALLBACK_METHODS(RoomJoined, on_join_room);
+	UNIGINE_CALLBACK_METHODS(RoomCreated, on_room_created);
+	UNIGINE_CALLBACK_METHODS(RoomListUpdated, on_room_list_updated);
+	UNIGINE_CALLBACK_METHODS(JoinRoomEvent, on_join_room_event);
+	UNIGINE_CALLBACK_METHODS(LeaveRoomEvent, on_leave_room_event);
+	UNIGINE_CALLBACK_METHODS(OnConnected, on_connected);
 
-	UNIGINE_CALLBACK_METODS(EventTransform, on_event_transform);
-	UNIGINE_CALLBACK_METODS(EventShot, on_event_shot);
-	UNIGINE_CALLBACK_METODS(EventHP, on_event_hp);
+	UNIGINE_CALLBACK_METHODS(EventTransform, on_event_transform);
+	UNIGINE_CALLBACK_METHODS(EventShot, on_event_shot);
+	UNIGINE_CALLBACK_METHODS(EventHP, on_event_hp);
 
 private:
 	Unigine::Signal on_join_room;
