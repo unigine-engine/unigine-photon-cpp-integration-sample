@@ -27,7 +27,7 @@ This gives a solid foundation for for building your own UNIGINE-based multiplaye
 ### Prerequisites
 
 - [**UNIGINE SDK Browser**](https://developer.unigine.com/en/docs/latest/start/installing_sdk?rlang=cpp) (latest version)
-- **UNIGINE SDK Community** or **Engineering** edition (**Sim** upgrade supported)
+- **UNIGINE SDK**
 - **Visual Studio 2022** (recommended)
   
 ### Step-by-Step Guide
@@ -42,21 +42,18 @@ To get started with the **Photon C++ Sample**:
    - Go to the *My Projects* tab.
    - Click *Add Existing*, select the `.project` file from the cloned folder (matching your OS - `*-win-*`/`*-lin-*`, edition, precision), and click *Import Project*.
 
-     ![Add Project](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/add_project.png)
-
-> [!NOTE]
-> If you're using **UNIGINE SDK *Sim***, select the ***Engineering*** `*-eng-sim-*.project` file when importing the sample. After import, you can upgrade the project to the **Sim** version directly in SDK Browser - just click *Upgrade*, choose the SDK **Sim** version, and adjust any additional settings you want to use in the configuration window that opens.
+     ![Add Project](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/add_project.png)
 
 4. **Repair the project**:
    - After importing, you'll see a **Repair** warning - this is expected, as only essential files are stored in the Git repository. SDK Browser will restore the rest.
 
-   ![Repair Project](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_repair.png)
+   ![Repair Project](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_repair.png)
    
     - Click *Repair* and then *Configure Project*.
 
-6. **Download Photon Realtime C++ Windows SDK** (**v5.0.13 Build 2**) from [photonengine.com](https://www.photonengine.com/). If you don’t have an account, you’ll need to register first.
+6. **Download Photon Realtime C++ Windows SDK** (**v5.0.14 Build 3**) from [photonengine.com](https://www.photonengine.com/). If you don’t have an account, you’ll need to register first.
 
-  ![Photon SDKs](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/sdks.jpg)
+  ![Photon SDKs](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/sdks.jpg)
  
 6. **Copy Photon SDK files**:
    - From downloaded SDK’s `/source`, copy the following folders into your project’s `source/PhotonSDK`:
@@ -68,22 +65,22 @@ To get started with the **Photon C++ Sample**:
 >[!TIP]
 >You can quickly access your project via SDK Browser by clicking the three dots next to your project's name and selecting _Open Folder_.
 >
->![Project Folder](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/project_folder.png)
+>![Project Folder](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/project_folder.png)
 
 7. **Create App IDs in Photon Dashboard**:
    - Go to the Dashboard at [photonengine.com](https://www.photonengine.com/) (the tab in the top right corner) and click **CREATE A NEW APP**.
      
-   ![Photon App](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_app.png)
+   ![Photon App](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_app.png)
    
    - Create two apps: ***Realtime Photon SDK*** and ***Chat Photon SDK***.
 
-   | ![Realtime App](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/realtime_app.png)| ![Chat App](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/chat_app.png)|
+   | ![Realtime App](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/realtime_app.png)| ![Chat App](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/chat_app.png)|
    |---|---|
    | <sup>Creating a Realtime Photon App</sup> | <sup>Creating a Chat Photon App</sup>|
    
    - Copy the generated App IDs in your sample project. The same ID is used for every instance (i.e. other participants don't need to create their own apps).
      
-   ![Photon ID](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_app_id.png)
+   ![Photon ID](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/photon_app_id.png)
    
 8. **Add App IDs to the sample project**: open `data/application_params.json` in your project `/data` folder and paste IDs:
 
@@ -121,15 +118,15 @@ To get started with the **Photon C++ Sample**:
 
 1. Run the sample and enter a nickname in the authorization form → click *Join Lobby*.
 
-![Photon Authorization](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/auth_app.png)  
+![Photon Authorization](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/auth_app.png)  
 
 2. If no rooms exist, create one (*Create Room*).
 
-![Photon Create Lobby](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/lobby_empty.png)
+![Photon Create Lobby](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/lobby_empty.png)
 
 3. Other users with the same App IDs in `data/application_params.json` will see and can join it.
 
-![Photon Lobby](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/lobby_room.png)
+![Photon Lobby](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/lobby_room.png)
 
 4. Double‑click the room name to enter.
 
@@ -142,6 +139,6 @@ To get started with the **Photon C++ Sample**:
    - Send global messages
    - Send private messages by typing `@username`.
 
-![Photon Messages](https://developer.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/app_world.jpg)
+![Photon Messages](https://documentation-api.unigine.com/en/docs/latest/sdk/api_samples/third_party/photon/app_world.jpg)
 
 7. As the health bar is empty, click *Leave* to return to *Lobby*.
